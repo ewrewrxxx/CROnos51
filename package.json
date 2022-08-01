@@ -1,0 +1,28 @@
+{
+  "name": "cronoscan-api",
+  "version": "1.0.0",
+  "description": "get staked adresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronoscan-api-example"
+  },
+  "keywords": [
+    "cosmos",
+    "cronosacn",
+    "express"
+  ],
+  "author": "alexlu0917",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
