@@ -29,7 +29,7 @@ app.get('/getAddresses', async (req, res) => {
         
         const result = addresResult.data.result;
         let addresses = result.map( address => address.topics[1]);
-        addresses = addresses.filter((address, index, self) => index === self.findIndex(sAddress => address === sAddress)); 
+        addresses = addresses.filter((address, index, self) => index === self.findIndex(sAddress => address === sAddress)).map(address => '0x' + address.slice(26)); 
         res.send(JSON.stringify({
             success: true,
             result: addresses,
